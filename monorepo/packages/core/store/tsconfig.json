@@ -1,0 +1,14 @@
+{
+  "extends": "@monorepo/ts-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "./*.tsx",
+    "./**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

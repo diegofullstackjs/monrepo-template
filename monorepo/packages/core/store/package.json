@@ -1,0 +1,13 @@
+{
+  "name": "@monorepo/store",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "kelvin.fabiana@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "react-redux": "^7.2.5",
+    "redux-saga": "^1.1.3",
+    "@monorepo/ts-config" : "*"
+  }
+}
