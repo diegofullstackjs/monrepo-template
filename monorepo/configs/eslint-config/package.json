@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo/eslint-config",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "author": "kelvin.fabiana@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "pub": "npm publish",
+    "pub:local": "yarn pub --registry http://localhost:4873",
+    "unpub:local": "npm unpublish @monorepo/eslint-config --force --registry http://localhost:4873"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}

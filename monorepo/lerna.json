@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "configs/*",
+    "packages/*",
+    "packages/apps/*",
+    "packages/core/*"
+  ],
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

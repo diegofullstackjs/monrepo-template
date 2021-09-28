@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo/ts-config",
+  "version": "1.0.0",
+  "main": "tsconfig.json",
+  "author": "kelvin diego da silva soares kelvin.fabiana@gmail.com",
+  "description": "Configurações do typescript",
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "pub": "npm publish",
+    "pub:local": "yarn pub --registry http://localhost:4873",
+    "unpub:local": "npm unpublish @monorepo/ts-config --force --registry http://localhost:4873"
+  }
+}

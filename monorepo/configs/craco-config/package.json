@@ -1,0 +1,18 @@
+{
+  "name": "@monorepo/craco-config",
+  "version": "1.0.0",
+  "main": "craco.config.js",
+  "author": "kelvin diego da silva soares < kelvin.fabiana@gmail.com > ",
+  "license": "MIT",
+  "scripts": {
+    "pub": "npm publish",
+    "pub:local": "yarn pub --registry http://localhost:4873",
+    "unpub:local": "npm unpublish @monorepo/craco-config --force --registry http://localhost:4873"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "fork-ts-checker-webpack-plugin": "^6.3.2",
+    "tsconfig-paths-webpack-plugin": "^3.5.1"
+  }
+}

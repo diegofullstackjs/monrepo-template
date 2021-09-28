@@ -1,0 +1,44 @@
+{
+  "name": "@monorepo/web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@monorepo/craco-config": "^1.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "cracoConfig": "../../../configs/craco-config/craco.config.js",
+  "scripts": {
+    "front-react:start": "cross-env SKIP_PREFLIGHT_CHECK=true  craco start",
+    "front-react:build": "cross-env SKIP_PREFLIGHT_CHECK=true  craco build",
+    "front-react:tests": "cross-env SKIP_PREFLIGHT_CHECK=true craco  test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

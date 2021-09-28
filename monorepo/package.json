@@ -1,0 +1,33 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "scripts": {
+    "start:npmDev" : "yarn verdaccio",
+    "pub": "lerna publish from-package",
+    "pub:local": "yarn pub --registry http://localhost:4873",
+    "unpub:local": "lerna run --parallel unpub:local"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "rollup-plugin-babel": "4.4.0",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-terser": "7.0.2",
+    "rollup-plugin-typescript2": "0.29.0",
+    "rollup-plugin-url": "3.0.1",
+    "typescript": "^4.4.2",
+    "verdaccio": "^5.1.6"
+  },
+  "version": "1.0.0",
+  "author": "kelvin diego da silva soares < kelvin.fabiana@gmail.com >",
+  "description": "Monorepo com Design System EslintConfig TSConfig nestjs  ",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "configs/*",
+      "packages/*",
+      "packages/apps/*",
+      "packages/core/*"
+    ]
+  }
+}

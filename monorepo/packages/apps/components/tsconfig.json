@@ -1,0 +1,6 @@
+{
+  "extends": "@monorepo/ts-config/tsconfig.reactcomponents.json",
+  "include": [
+    "src"
+  ]
+}

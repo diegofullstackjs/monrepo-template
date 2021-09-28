@@ -1,0 +1,43 @@
+{
+  "name": "@monorepo/components",
+  "author": "kelvin diego da silva soares < kelvin.fabiana@gmail.com >",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "types/src/index.d.ts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@monorepo/ts-config" : "*",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "build": "rollup -c ../../../rollup.config.js",
+    "prepub": "yarn build",
+    "pub": "npm publish",
+    "pub:local": "yarn pub --registry http://localhost:4873",
+    "unpub:local": "npm unpublish @monorepo/components --force --registry http://localhost:4873"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
